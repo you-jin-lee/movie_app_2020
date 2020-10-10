@@ -1,46 +1,19 @@
 import React from "react";
-import axios from "axios";
-import Movie from './Movie';
-import "./App.css";
-import "./orange.jpg"
+import { HashRouter, Route } from "react-router-dom";
+import About from './routes/About';
+import Home from './routes/Home';
+import Navigation from './components/Navigation';
+import './App.css';
 
-class App extends React.Component {
-  state = {
-    isLoading: true,
-    movies: []
-  };
-
-  getMovies = async () => {
-    const {data: {data : {movies}}} = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating");
-    this.setState({movies, isLoading: false}) //this.setState({movies: movies})
-  }
-  componentDidMount() {
-    this.getMovies();
-  }
-
-  render() {
-    const {isLoading, movies} = this.state;
-    return (<section className="container"> 
-      {isLoading 
-      ? <div className="loader">
-        <span className="loader__text">Loading...</span>
-      </div>
-      : (<div className="main"> 
-          <div className="header">
-            <p className="header__title">Wanna Find <strong>High Rating</strong> Movies?</p>
-            <p className="header__subtitle">Here is what you want..</p>
-          </div>
-          <div className="movies">
-            {
-              movies.map(movie => {
-                return <Movie key={movie.id} id={movie.id} year={movie.year} title={movie.title} summary={movie.summary} poster={movie.medium_cover_image} genres={movie.genres} />
-            })
-            }
-          </div>
-        </div>
-      )
-      }</section>);
-  }
+function App() {
+  return (
+    <div className='container'>
+      <HashRouter>
+        <Navigation />
+        <Route path='/' exact={true} component={Home} />
+        <Route path='/about' component={About} />
+      </HashRouter>
+    </div>);
 }
 
 export default App
