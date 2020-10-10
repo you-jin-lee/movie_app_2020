@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b0dd50d.chunk.css",
+    "main.js": "/static/js/main.e604904d.chunk.js",
+    "main.js.map": "/static/js/main.e604904d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.58002af7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.58002af7.js.map",
+    "static/js/2.8f3b569d.chunk.js": "/static/js/2.8f3b569d.chunk.js",
+    "static/js/2.8f3b569d.chunk.js.map": "/static/js/2.8f3b569d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f45a84bf21eccc635fa384a8dd9ed360.js": "/precache-manifest.f45a84bf21eccc635fa384a8dd9ed360.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3b0dd50d.chunk.css.map": "/static/css/main.3b0dd50d.chunk.css.map",
+    "static/js/2.8f3b569d.chunk.js.LICENSE.txt": "/static/js/2.8f3b569d.chunk.js.LICENSE.txt",
+    "static/media/orange.jpg": "/static/media/orange.291f648f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58002af7.js",
+    "static/js/2.8f3b569d.chunk.js",
+    "static/css/main.3b0dd50d.chunk.css",
+    "static/js/main.e604904d.chunk.js"
+  ]
+}
