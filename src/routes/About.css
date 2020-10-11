@@ -1,0 +1,55 @@
+.about_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1100px;
+    padding: 80px;
+    padding-left: 130px;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    background-image: linear-gradient(
+      to bottom,
+      rgb(238, 165, 29),
+      10%,
+      black
+    );
+    
+    border-radius: 30px;
+  }
+
+.about_container .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+  }
+
+.about_container .sub {
+    font-size: 40px;
+    color: white;
+}
+
+.about_container .contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contents .project_content,
+.contents .study_content{
+    margin: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+hr {
+    color: 'ivory';
+    background-color: 'ivory';
+    width: 90%;
+}

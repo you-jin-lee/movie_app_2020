@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation() {
-    return (<div className="nav_btn">
-        <button><Link to='/'>Home</Link></button>
-        <button><Link to='/about'>About</Link></button>
-    </div>);
+    return (
+        <div className="nav">
+            <Link className='nav__btn' style={{ textDecoration: 'none' }} to='/'>Home</Link>
+            <Link className='nav__btn' style={{ textDecoration: 'none' }} to="/about">About</Link>
+        </div>);
 }
 
 export default Navigation;

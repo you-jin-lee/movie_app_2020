@@ -1,4 +1,4 @@
-.nav_btn {
+.nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,19 +7,21 @@
     margin-top: 50px;
     padding-top: 30px;
     padding-left: 30px;
+
 }
 
-.nav_btn button{
-    margin: 5px;
-    background-color: #f2f2f2;
-    border-color: transparent;
-    border-radius: 5px;
+.nav .nav__btn {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
 }
 
-.nav_btn Link{
-    color: blue;
-}
-
-.nav_btn button :hover {
+.nav .nav__btn:hover{
+    transform: scale(1.1);
     color: orange;
+    text-decoration: underline;
+    transition: transform .35s;
 }
